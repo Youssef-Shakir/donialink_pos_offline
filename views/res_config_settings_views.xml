@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.donialink_pos_offline</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='pos_interface_section']" position="inside">
+                <setting id="dl_offline_mode" string="Offline Mode"
+                         help="Open the POS and sell without internet; orders are sent when the connection is back. Closing the register always needs internet.">
+                    <field name="pos_dl_offline_mode"/>
+                    <div class="text-muted mt8">
+                        Needs HTTPS. Open the POS once online after switching it on.
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

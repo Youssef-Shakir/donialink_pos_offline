@@ -1,0 +1,227 @@
+# Arabic translation of DoniaLink POS Offline
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#. module: donialink_pos_offline
+#: model:ir.model.fields,field_description:donialink_pos_offline.field_pos_config__dl_offline_mode
+#: model:ir.model.fields,field_description:donialink_pos_offline.field_res_config_settings__pos_dl_offline_mode
+#: model_terms:ir.ui.view,arch_db:donialink_pos_offline.res_config_settings_view_form
+msgid "Offline Mode"
+msgstr "وضع العمل دون اتصال"
+
+#. module: donialink_pos_offline
+#: model:ir.model.fields,help:donialink_pos_offline.field_pos_config__dl_offline_mode
+#: model:ir.model.fields,help:donialink_pos_offline.field_res_config_settings__pos_dl_offline_mode
+msgid "Open this point of sale and sell without internet. Orders made offline are sent when the server can be reached again. Needs HTTPS."
+msgstr "فتح نقطة البيع والبيع دون إنترنت. تُرسل الطلبات التي تمت دون اتصال عند إمكانية الوصول إلى الخادم مجدداً. يتطلب HTTPS."
+
+#. module: donialink_pos_offline
+#: model_terms:ir.ui.view,arch_db:donialink_pos_offline.res_config_settings_view_form
+msgid "Open the POS and sell without internet; orders are sent when the connection is back. Closing the register always needs internet."
+msgstr "فتح نقطة البيع والبيع دون إنترنت؛ تُرسل الطلبات عند عودة الاتصال. إغلاق الصندوق يتطلب الإنترنت دائماً."
+
+#. module: donialink_pos_offline
+#: model_terms:ir.ui.view,arch_db:donialink_pos_offline.res_config_settings_view_form
+msgid "Needs HTTPS. Open the POS once online after switching it on."
+msgstr "يتطلب HTTPS. افتح نقطة البيع مرة واحدة مع الاتصال بعد التفعيل."
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Some orders could not be sent yet. They will be tried again."
+msgstr "لم يتم إرسال بعض الطلبات بعد. ستتم إعادة المحاولة."
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "The server can't be reached. Connect to the internet and try again."
+msgstr "لا يمكن الوصول إلى الخادم. اتصل بالإنترنت وحاول مرة أخرى."
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Some orders are still waiting to be sent. Refresh after they are sent."
+msgstr "ما زالت بعض الطلبات بانتظار الإرسال. حدّث البيانات بعد إرسالها."
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Offline & sync"
+msgstr "العمل دون اتصال والمزامنة"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Server"
+msgstr "الخادم"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Orders waiting to be sent"
+msgstr "طلبات بانتظار الإرسال"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Orders kept safe on this device"
+msgstr "طلبات محفوظة بأمان على هذا الجهاز"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Other changes waiting"
+msgstr "تغييرات أخرى بالانتظار"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Last sync"
+msgstr "آخر مزامنة"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "POS data loaded"
+msgstr "تحميل بيانات نقطة البيع"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Open without internet"
+msgstr "الفتح دون إنترنت"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Sync now"
+msgstr "مزامنة الآن"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Refresh data"
+msgstr "تحديث البيانات"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Close"
+msgstr "إغلاق"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Syncing…"
+msgstr "جارٍ المزامنة…"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+#, python-format
+msgid "Offline · %s orders waiting"
+msgstr "غير متصل · %s طلبات بالانتظار"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Offline"
+msgstr "غير متصل"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+#, python-format
+msgid "%s orders waiting to be sent"
+msgstr "%s طلبات بانتظار الإرسال"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Back online · tap to refresh data"
+msgstr "عاد الاتصال · اضغط لتحديث البيانات"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Online"
+msgstr "متصل"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Not reachable (working offline)"
+msgstr "غير متاح (العمل دون اتصال)"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "(saved copy)"
+msgstr "(نسخة محفوظة)"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Preparing…"
+msgstr "جارٍ التجهيز…"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Ready"
+msgstr "جاهز"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Off (POS setting)"
+msgstr "متوقف (إعداد نقطة البيع)"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Needs HTTPS on the Odoo server"
+msgstr "يتطلب HTTPS على خادم أودو"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Not supported by this browser"
+msgstr "غير مدعوم في هذا المتصفح"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Not available"
+msgstr "غير متاح"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Closing needs internet"
+msgstr "الإغلاق يتطلب اتصالاً بالإنترنت"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "The Odoo server can't be reached. Orders made offline are safe on this device. Close the register when the connection is back."
+msgstr "لا يمكن الوصول إلى خادم أودو. الطلبات التي تمت دون اتصال محفوظة بأمان على هذا الجهاز. أغلق الصندوق عند عودة الاتصال."
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+msgid "Orders not sent yet"
+msgstr "طلبات لم تُرسل بعد"
+
+#. module: donialink_pos_offline
+#. odoo-javascript
+#: code:addons/donialink_pos_offline/static/src/offline_monitor.js
+#, python-format
+msgid "%s orders are not on the server yet. Close the register after they are sent (Offline & sync → Sync now)."
+msgstr "%s طلبات لم تصل إلى الخادم بعد. أغلق الصندوق بعد إرسالها (العمل دون اتصال والمزامنة ← مزامنة الآن)."

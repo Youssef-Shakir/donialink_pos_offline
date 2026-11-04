@@ -1,0 +1,87 @@
+// Offline badge (bottom centre) and the "Offline & sync" panel.
+
+.dl-off-pill {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1040;
+    max-width: calc(100vw - 32px);
+    padding: 6px 14px;
+    border: 0;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    &.dl-show { display: block; }
+    &.dl-off { background: #b42318; color: #fff; }
+    &.dl-wait { background: #f79009; color: #fff; }
+    &.dl-sync { background: #0e3f64; color: #fff; }
+}
+
+.dl-off-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1060;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+    &.dl-open { display: flex; }
+}
+
+.dl-off-panel {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    color: #0b1c2b;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dl-off-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0e3f64;
+    margin-bottom: 12px;
+}
+
+.dl-off-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 7px 0;
+    border-bottom: 1px solid #e4e9ee;
+    font-size: 14px;
+}
+
+.dl-off-label { color: #4a5d70; }
+.dl-off-value { font-weight: 600; text-align: end; }
+.dl-ok { color: #2d7a31; }
+.dl-bad { color: #b42318; }
+
+.dl-off-error {
+    color: #b42318;
+    font-size: 13px;
+    margin-top: 10px;
+
+    &:empty { display: none; }
+}
+
+.dl-off-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+
+    .btn { flex: 1 1 auto; }
+}
