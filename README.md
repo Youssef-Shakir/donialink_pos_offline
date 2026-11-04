@@ -25,6 +25,7 @@ Browsers only allow the offline page cache (service worker) on secure sites. Ove
 | POS data | `static/src/offline_data.js` | Saves the `pos.session/load_data` answer in IndexedDB at every online start; uses it when the server can't be reached. |
 | Status and sync | `static/src/offline_monitor.js` | Checks the server every 60 s (10 s while offline), switches the POS to offline mode, sends waiting orders when it answers again. Badge + "Offline & sync" panel (Sync now, Refresh data). Blocks closing the register without internet or with unsent orders. |
 | Order safe | `static/src/order_safe.js` | Paid orders go to disk the moment they are paid (strict writes), plus a second copy in its own database, removed only once the server has the order. |
+| Refunds | `static/src/refund_state.js` | Saves the lines chosen for a refund as plain data, so refunding an order paid offline doesn't fail with "cyclic object value". |
 | Setting | `models/`, `views/` | `pos.config.dl_offline_mode` (Offline Mode). Only controls opening offline; order safety and the closing check are always on. |
 
 Orders themselves are kept by Odoo: paid orders that aren't on the server yet stay in the
